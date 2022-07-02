@@ -46,7 +46,13 @@ body {
     border: 1px solid black;
     border-radius: 6px;
 }
-
+.container select{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
 .secondPart .container button {
     margin-top: 12px;
     padding: 15px 40px;
