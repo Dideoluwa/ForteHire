@@ -1,59 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@100&display=swap');
 
-.secondPart {
-    max-width: 50%;
-    margin-top: 0%;
-    flex: 1;
-    width: 80%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
     scroll-behavior: smooth;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav .logo_background svg {
+    width: 20%;
+    height: 20%;
+}
+
+nav .logo {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+
 }
 
 .img1 {
-    margin-top: 15%;
-    animation: side 1s forwards;
+    display: none;
+
 }
 
 .init-cont {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+    border: 0.5px solid #1E1E1E;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
     border-radius: 15px;
-    width: 100%;
+    width: 50%;
     animation: jumpIn 1s forwards;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
+
+.init-cont .secondPart .container h1 {
+    text-align: center;
+    font-weight: bold;
 }
 
-.container label {
-    padding-top: 12px;
+.init-cont .secondPart .container label {
     font-size: 17px;
     margin-left: 12px;
     color: #282828;
 }
 
-.container input {
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 6px;
+.init-cont .secondPart .container input {
+    padding: 15px 10px;
+    font-size: 14px;
+    width: 99.4%;
+    border: 0.5px solid black;
+    border-radius: 8px;
 }
-.container select{
-    margin-top: 20px;
-    padding: 15px;
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 6px;
-}
-.secondPart .container button {
+
+.init-cont .secondPart .container button {
     margin-top: 12px;
     padding: 15px 40px;
     width: 100%;
@@ -61,19 +67,18 @@ body {
     border: none;
     color: white;
     cursor: pointer;
-    background-color: rgb(72, 69, 210);
-    /* background-color: red; */
+    background-color: #8325B0;
     transition: all 0.3s ease-in-out;
 }
 
-.secondPart .container button a {
+.init-cont .secondPart .container button a {
     text-decoration: none;
     color: black;
 }
 
 .secondPart .container button:hover {
     transition: 0.3s;
-    background-color: rgb(93, 91, 226);
+    background-color: #a149ca;
 }
 
 .secondPart .alt p {
@@ -84,7 +89,7 @@ body {
 
 .secondPart .alt p a {
     text-decoration: none;
-    color: #4845D2;
+    color: #8325B0;
 }
 
 .container .label {
@@ -131,53 +136,68 @@ body {
 }
 
 @media screen and (max-width: 912px) {
+    nav .logo_background svg {
+        width: 30%;
+        height: 30%;
+    }
+    
+    nav .logo {
+        position: absolute;
+        top: 4%;
+        left: 4%;
+    
+    }
+
     .img1 {
         margin-top: 0%;
     }
 
     .init-cont {
+        border: none;
         align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         border-radius: 15px;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 540px) {
+    nav {
+        display: none;
+    }
     .init-cont {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        padding: 0;
         border-radius: 15px;
         width: 100%;
     }
 
-    .container h1 {
-        font-size: 18px;
+    .init-cont .secondPart .container h1 {
+        font-size: 20px;
+        text-align: initial;
+        font-weight: bold;
+        margin-bottom: 35px;
     }
 
     .inst {
         font-size: 14px;
     }
-
     .img1 {
-        margin-top: 0%;
-        margin-left: 80px;
-        width: 100%;
+        margin-left: -18px;
+        display: block;
+        width: 376px;
+        height: 101px;
+    }
+    .init-cont .logo{
+        position: absolute;
+        width: 50px;
+        top: 6%;
+        left: 6%;
     }
 
-    .img1 svg {
-        width: 70%;
-    }
-
-    .container {
+    .secondPart .container {
         display: flex;
         flex-direction: column;
+       margin-top: 120px;
         width: 100%;
-        margin: 0;
     }
 
     .secondPart {
@@ -214,16 +234,17 @@ body {
 
 @media screen and (max-width: 390px) {
     .init-cont {
+        padding: 0;
         align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         border-radius: 15px;
         width: 100%;
     }
 
-    .container h1 {
-        font-size: 18px;
+    .init-cont .secondPart .container h1 {
+        font-size: 20px;
+        text-align: initial;
+        font-weight: bold;
+        margin-bottom: 35px;
     }
 
     .inst {
@@ -231,13 +252,17 @@ body {
     }
 
     .img1 {
-        margin-top: 0%;
-        margin-left: 0px;
-        width: 100%;
+        margin-left: -18px;
+        display: block;
+        width: 276px;
+        height: 101px;
     }
 
-    .img1 svg {
-        width: 90%;
+    .init-cont .logo{
+        position: absolute;
+        width: 60px;
+        top: 6%;
+        left: 15%;
     }
 
     .container {
@@ -245,6 +270,7 @@ body {
         flex-direction: column;
         width: 100%;
         margin: 0;
+        margin-top: 140px;
     }
 
     .secondPart {
@@ -255,7 +281,7 @@ body {
     }
 
     .container label {
-        font-size: 14px;
+        font-size: 16px;
         margin-left: 0;
     }
 
@@ -264,6 +290,7 @@ body {
         border: 0.5px solid #282828;
         font-weight: 400;
         font-size: 12px;
+        width: 100%;
         color: rgba(40, 40, 40, 0.7);
     }
 
