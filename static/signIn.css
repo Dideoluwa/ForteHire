@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+.img {
+    margin-top: 5%;
+    animation: side 1s forwards;
+}
+
+.secondPart {
+    max-width: 50%;
+    margin-top: 0%;
+    flex: 1;
+    width: 80%;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.init-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    width: 100%;
+    animation: jumpIn 1s forwards;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.container label {
+    padding-top: 12px;
+    font-size: 17px;
+    margin-left: 12px;
+    color: #282828;
+}
+
+.container input {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.secondPart .container button {
+    margin-top: 12px;
+    padding: 15px 40px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(72, 69, 210);
+    transition: all 0.3s ease-in-out;
+}
+
+.secondPart .container button a {
+    text-decoration: none;
+    color: black;
+}
+
+.secondPart .container button:hover {
+    transition: 0.3s;
+    background-color: rgb(93, 91, 226);
+}
+
+.secondPart .alt p {
+    margin-left: 25%;
+    margin-top: 4%;
+    font-size: 17px;
+}
+
+.secondPart .alt p a {
+    text-decoration: none;
+    color: #4845D2;
+}
+
+.inst {
+    font-size: 19px;
+}
+
+.inpt4 {
+    margin-bottom: 10%;
+}
+
+@keyframes jumpIn {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes side {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .init-cont {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        width: 100%;
+    }
+    .img {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .init-cont {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 18px;
+    }
+
+    .inst {
+        font-size: 14px;
+    }
+
+    .img {
+        margin-top: 0%;
+        margin-left: 80px;
+        width: 100%;
+    }
+
+    .img svg {
+        width: 70%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .secondPart {
+        max-width: 100%;
+        margin-top: 0%;
+        flex: 1;
+        width: 100%;
+    }
+
+    .container label {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .container input {
+        border-radius: 6px;
+        border: 0.5px solid #282828;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(40, 40, 40, 0.7);
+    }
+
+    .inpt4 {
+        margin-bottom: 10%;
+    }
+
+    .secondPart .alt p {
+        margin-left: 0%;
+        margin-top: 4%;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .init-cont {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 18px;
+    }
+
+    .inst {
+        font-size: 14px;
+    }
+
+    .img {
+        margin-top: 0%;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .img svg {
+        width: 90%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .secondPart {
+        max-width: 100%;
+        margin-top: 0%;
+        flex: 1;
+        width: 100%;
+    }
+
+    .container label {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .container input {
+        border-radius: 6px;
+        border: 0.5px solid #282828;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(40, 40, 40, 0.7);
+    }
+
+    .inpt4 {
+        margin-bottom: 10%;
+    }
+
+    .secondPart .alt p {
+        margin-left: 0%;
+        margin-top: 4%;
+        font-size: 10px;
+        text-align: center;
+    }
+}
