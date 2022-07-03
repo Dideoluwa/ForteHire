@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/signIn.css">
     <link rel="stylesheet" href="{% static 'signIn.css' %}">
     <title>Login</title>
 </head>
@@ -56,19 +55,24 @@
             <form action="" method="post">
                 {% csrf_token %}
                 <div class="container">
-                    <h1>Log In</h1>
+
+        
                     <div>
-                        <style>
-                            h4 {
-                                color: red;
-                            }
-                        </style>
-                        {% for message in messages %}
-                        <h4>{{message}}</h4>
-                        {%endfor%}
-                    </div>
+                    <h1>Log in</h1>
+                    <!--Do not delete-->
+                     <!-- <div>
+  
+                          <style>
+                              h4{color: red;}
+                          </style>
+                          {% for message in messages%}
+                              <h4>{{messages}}</h4>
+                          {%endfor%}
+                      </div>-->
+                    
                     <label for="uname"><b>Email</b></label>
-                    <input type="email" placeholder="ayodejibrown@gmail.com" name="username" required>
+                    <input type="email" placeholder="ayowandebrown@gmail.com" name="email" required>
+
 
                     <label for="psw"><b>Password</b></label>
                     <input class="inpt4" type="password" placeholder="*****" name="password" required>
@@ -79,11 +83,10 @@
                 </div>
             </form>
             <div class="alt">
-                <p>Don't have an account? <a href="{% url 'signup' %}">Sign-up</a> here</p>
+                <p>Don't have an account? <a href="{%url 'signup' %}">Sign-up</a> here</p>
             </div>
         </div>
     </div>
-    <script src="{% static 'app.js' %}"></script>
 </body>
 
 </html>
