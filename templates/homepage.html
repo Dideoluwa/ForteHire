@@ -35,43 +35,164 @@
             <input type="search" class="nav_input nav_input_icon" placeholder="Search">
         </div>
     </nav>
-    <section class="profile">
-        <div class="profile_img">
-            <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
-        </div>
-        <h3 class="profile_name">{{user.first_name}} {{user.last_name}}</h3>
-        <h4 class="profile_talent">{{user_profile.talent}}</h4>
-        <h5 class="profile_location">{{user_profile.user_location}}</h5>
-        <div class="divided-line"></div>
-        <div class="profile_bio">
-            <h3 class="profile_name">Bio</h3>
-            <h5 class="profile_bio">{{user.user_bio}}</h5>
-        </div>
-        <div class="divided-line"></div>
-        <div class="profile_skills">
-            <h3 class="profile_name">Skills</h3>
-            <ul class="profile_bio">
-                <li>{{user_profile.skills}}</li>
-            </ul>
-        </div>
-        <div class="divided-line"></div>
-        <div class="profile_portfolio">
-            <h3 class="profile_name">Portfolio</h3>
-            <p class="port_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
-        </div>
-        <div class="divided-line"></div>
-        <div class="profile_contact">
-            <h3 class="profile_name">Contact</h3>
-            <ul class="profile_bio">
-                <li><a href="{{user.email}}">Email</a></li>
-               
-            </ul>
-        </div>
-    </section>
-    <section class="main_body">
-        <p>
-         
-            </p>
+    <section class="init-body">
+        <section class="profile">
+            <div class="profile_img">
+                <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
+            </div>
+            <h3 class="profile_name">{{user.first_name}} {{user.last_name}}</h3>
+            <h4 class="profile_talent">{{user_profile.talent}}</h4>
+            <h5 class="profile_location">{{user_profile.user_location}}</h5>
+            <div class="divided-line"></div>
+            <div class="profile_bio">
+                <h3 class="profile_name">Bio</h3>
+                <h5 class="profile_bio">{{user.user_bio}}</h5>
+            </div>
+            <div class="divided-line"></div>
+            <div class="profile_skills">
+                <h3 class="profile_name">Skills</h3>
+                <ul class="profile_bio">
+                    <li>{{user_profile.skills}}</li>
+                </ul>
+            </div>
+            <div class="divided-line"></div>
+            <div class="profile_portfolio">
+                <h3 class="profile_name">Portfolio</h3>
+                <p class="port_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
+            </div>
+            <div class="divided-line"></div>
+            <div class="profile_contact">
+                <h3 class="profile_name">Contact</h3>
+                <ul class="profile_bio">
+                    <li><a href="{{user.email}}">Email</a></li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="main_body">
+            <div class="main_body_title">
+                <p>Vacancies according to your skills</p>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 24C16.2652 24 16.5196 23.8946 16.7071 23.7071C16.8946 23.5196 17 23.2652 17 23C17 22.7348 16.8946 22.4804 16.7071 22.2929C16.5196 22.1054 16.2652 22 16 22C15.7348 22 15.4804 22.1054 15.2929 22.2929C15.1054 22.4804 15 22.7348 15 23C15 23.2652 15.1054 23.5196 15.2929 23.7071C15.4804 23.8946 15.7348 24 16 24V24ZM16 17C16.2652 17 16.5196 16.8946 16.7071 16.7071C16.8946 16.5196 17 16.2652 17 16C17 15.7348 16.8946 15.4804 16.7071 15.2929C16.5196 15.1054 16.2652 15 16 15C15.7348 15 15.4804 15.1054 15.2929 15.2929C15.1054 15.4804 15 15.7348 15 16C15 16.2652 15.1054 16.5196 15.2929 16.7071C15.4804 16.8946 15.7348 17 16 17V17ZM16 10C16.2652 10 16.5196 9.89464 16.7071 9.70711C16.8946 9.51957 17 9.26522 17 9C17 8.73478 16.8946 8.48043 16.7071 8.29289C16.5196 8.10536 16.2652 8 16 8C15.7348 8 15.4804 8.10536 15.2929 8.29289C15.1054 8.48043 15 8.73478 15 9C15 9.26522 15.1054 9.51957 15.2929 9.70711C15.4804 9.89464 15.7348 10 16 10V10Z"
+                        stroke="#1E1E1E" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>House of Lunette <span>- posted 7min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>A shades landing page</h1>
+                    <p>We have need an expert who can design a beautiful landing page for an eye glasses company using
+                        figma. We have a refrence and we want our design to be as simple yet mersimerising as possible.
+                        Check the link below to apply.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $700</h1>
+                        <h1>Remote</h1>
+                        <h1>Expert level</h1>
+                    </div>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>FashionU <span>- posted 7min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>A fashion website</h1>
+                    <p>We are a startup currently in need of an experienced website designer with a little bit of
+                        knowledge
+                        of CSS, Javascript and HTML from Africa to design a user friendly fashion website, additional
+                        advantages upon qualifing for the position, send resume and cover letters to our mail..</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $3500</h1>
+                        <h1>Remote</h1>
+                        <h1>Expert level</h1>
+                    </div>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>House of Lunette <span>- posted 7min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>A shades landing page</h1>
+                    <p>We have need an expert who can design a beautiful landing page for an eye glasses company using
+                        figma. We have a refrence and we want our design to be as simple yet mersimerising as possible.
+                        Check the link below to apply.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $700</h1>
+                        <h1>Remote</h1>
+                        <h1>Expert level</h1>
+                    </div>
+                    <button>Apply Now</button>
+                </div>
+            </div>
+        </section>
     </section>
     <footer>
         <div class="footer_cover">
