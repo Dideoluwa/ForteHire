@@ -130,12 +130,7 @@ body {
     width: 98%;
     font-size: 22px;
     color: black;
-    cursor: pointer;
+    cursor: no-drop;
     margin-top: 50px;
     margin-bottom: 70px;
-}
-.main_form button:hover{
-    /* transition: all 0.2s ease-in-out; */
-    /* background: #8325B0; */
-    /* color: #FFFFFF; */
 }

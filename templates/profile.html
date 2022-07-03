@@ -89,15 +89,15 @@
                 <div class="main_form">
                     <div class="main_form_inputs">
                         <label for="name">Name</label>
-                        <input type="text" placeholder="First and last name">
+                        <input class="input1" type="text" placeholder="First and last name">
                     </div>
                     <div class="main_form_inputs">
                         <label for="name">Country</label>
-                        <input type="text" placeholder="Nigeria">
+                        <input class="input2" type="text" placeholder="Nigeria">
                     </div>
                     <div class="main_form_inputs">
                         <label for="name">Bio</label>
-                        <textarea placeholder="In a 700 words, describe your motivation, inspiration, ambition..."
+                        <textarea class="input6" placeholder="In a 700 words, describe your motivation, inspiration, ambition..."
                             id="post-txt" name="caption" rows="5" cols="33">
 
                         </textarea>
@@ -105,17 +105,17 @@
                     </div>
                     <div class="main_form_inputs">
                         <label for="name">Skills</label>
-                        <input type="text" placeholder="Input your field of expertise(you can input more than one)...">
+                        <input class="input3" type="text" placeholder="Input your field of expertise(you can input more than one)...">
                     </div>
                     <div class="main_form_inputs">
                         <label for="name">Portfolio</label>
-                        <input type="text" placeholder="Add a link to your portfolio here...">
+                        <input class="input5" type="text" placeholder="Add a link to your portfolio here...">
                     </div>
                     <div class="main_form_inputs">
                         <label for="name">Contact</label>
-                        <input type="text" placeholder="Add ways to contact you...">
+                        <input class="input4" type="text" placeholder="Add ways to contact you(Email)">
                     </div>
-                    <button class="btn" type="submit">Done</button>
+                    <button class="btn" type="submit" disabled>Done</button>
                 </div>
                 <!-- <label for="story">Write a caption:</label> -->
                 <!-- <label id="photo" for="photo">Add a picture below:</label> -->
@@ -129,7 +129,7 @@
     <link rel="stylesheet" href="{% static 'home.css' %}">
     <title>Profile</title>
 </head>
-<body>
+<!-- <body>
     <h1>{{user.first_name}} {{user.last_name}}</h1>
-</body>
+</body> -->
 </html>

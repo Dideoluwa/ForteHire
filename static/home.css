@@ -18,6 +18,10 @@ body {
     display: flex;
 }
 
+.hamburger-icon {
+    display: none;
+}
+
 nav {
     /* position: fixed; */
     background: #F7F7F7;
@@ -50,6 +54,16 @@ nav {
     cursor: pointer;
     font-size: 20px;
     list-style: none;
+}
+
+.nav_list ul li a {
+    color: #1E1E1E;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav_list ul li a:hover {
+    color: #8325B0;
 }
 
 .nav_list ul li:hover {
@@ -252,7 +266,7 @@ footer {
 .footer_init {
     margin-top: 80px;
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 0px;
     justify-content: space-around;
 }
 
@@ -263,7 +277,7 @@ footer {
 .footer_cover {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 
 }
 
@@ -280,6 +294,7 @@ footer {
 
 .footer_cover svg {
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .goals {
@@ -308,11 +323,178 @@ footer {
     display: flex;
     flex-direction: row;
     flex: 1;
-    max-width: 100%;
+    max-width: 50%;
 
 }
-
+.goals_contact .imgs{
+    display: flex;
+    margin-top: 1px;
+    margin-left: 0;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+}
 .goals_contact p {
     font-size: 14px;
     width: 100%
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 912px) {
+    .nav_list {
+        display: none;
+    }
+
+    .nav_searchBar {
+        display: none;
+    }
+
+    .menu_searchBar input {
+        border-radius: 8px;
+        padding: 13px 15px;
+        /* width: 288px; */
+        width: 100%;
+        border: 0.5px solid #1E1E1E;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-right: 2px;
+        padding-left: 0px;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .hamburger-icon div {
+        width: 35px;
+        margin-top: 3px;
+        background-color: black;
+        height: 4px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .menu {
+        position: fixed;
+        font-family: 'Roboto', sans-serif;
+        width: 0;
+        height: 60%;
+        right: 0;
+        top: 0;
+        margin: auto;
+        /* padding: 20px; */
+        flex-direction: column;
+        display: flex;
+        background-color: rgb(69, 37, 84);
+        justify-content: center;
+        /* align-items: center; */
+        transition: 0.2s;
+        overflow-x: hidden;
+        z-index: 1000;
+    }
+
+    .menu ul {
+        margin-top: 50px;
+    }
+
+    .menu ul li {
+        margin-bottom: 12px;
+        padding: 12px;
+        font-size: 25px;
+        list-style: none;
+        color: white;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-list p {
+        font-size: 45px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        padding: 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-list p a {
+        text-decoration: none;
+        color: rgb(158, 158, 158);
+    }
+
+    .menu-list p a:hover {
+        transition: all 0.3s ease-in-out;
+        color: rgb(255, 255, 255);
+    }
+
+    .menu-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: rgb(158, 158, 158);
+        font-size: 55px;
+    }
+
+    .menu-close:hover {
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    div .second-icon {
+        width: 27px;
+    }
+
+    div .first-icon {
+        width: 20px;
+    }
+
+    .hamburger-icon:hover div {
+        width: 35px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .footer_init {
+        flex-direction: column;
+    }
+
+    /* .goals_contact {
+        flex-direction: column;
+    } */
+    .goals_links {
+        max-width: 50%;
+    }
+    .quick_links{
+        /* padding: 20px; */
+        margin-bottom: 20px;
+    }
+    .goals_contact {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        /* width: 250%; */
+        max-width: 100%;
+    
+    }
+    .goals_contact .imgs{
+    width: 30%;
+    height: 30%;
+        
+    }
+    .goals_contact .imgs svg{
+        /* padding: 20px; */
+        margin-left: 12px;
+    }
 }
