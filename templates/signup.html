@@ -57,20 +57,18 @@
                 {% csrf_token %}
                 <div class="container">
                     <h1>Sign Up</h1>
-
-                    <div>
-
+                    <div> 
                         <p class="inst">Please fill in this form to create an account.</p>
                         <!--Do not delete-->
-                        <!--<div>
+                        <div>
                         <style>
                             h4{color: red;}
                         </style>
                         {% for message in messages%}
                             <h4>{{messages}}</h4>
                         {%endfor%}
-                    </div>-->
-
+                        </div>
+                    
                         <div class="label">
                             <p><b>First Name</b></p>
                             <p class="important">*</p>
@@ -101,49 +99,9 @@
                             <p class="important">*</p>
                         </div>
                         <input type="password" placeholder="******" name="password2">
-
-
-
                         <button class="clearfix" type="submit">Sign Up</button>
                     </div>
-
-
-                    <input type="text" placeholder="ayowande" name="firstname">
-
-
-                    <div class="label">
-                        <p><b>Last Name</b></p>
-                        <p class="important">*</p>
-                    </div>
-                    <input type="text" placeholder="Brown" name="lastname">
-
-
-                    <div class="label">
-                        <p><b>Email</b></p>
-                        <p class="important">*</p>
-                    </div>
-                    <input type="email" placeholder="ayodejibrown@gmail.com" name="email">
-
-                    <div class="label">
-                        <p><b>Password</b></p>
-                        <p class="important">*</p>
-                    </div>
-                    <input type="password" placeholder="******" name="password">
-
-                    <div class="label">
-                        <p><b>Confirm Password</b></p>
-                        <p class="important">*</p>
-                    </div>
-                    <input type="password" placeholder="******" name="password2">
-                    <div class="label">
-                        <p><b>Select countries</b></p>
-                        <p class="important">*</p>
-                    </div>
-    
-
-
-
-                    <button class="clearfix" type="submit">Sign Up</button>
+                
                 </div>
             </form>
             <div class="alt">
