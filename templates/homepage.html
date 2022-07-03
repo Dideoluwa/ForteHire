@@ -67,7 +67,7 @@
             </div>
             <div class="divided-line"></div>
             <div class="profile_contact">
-                <h3 class="profile_name">Contact</h3>
+                <h3 class="profile_name">Email</h3>
                 <ul class="profile_bio">
                     <li><a href="mailto:{{user.email}}">{{user.email}}</a></li>
 
@@ -81,13 +81,47 @@
             </div>
             <ul>
                 <li>Home</li>
-                <li>Find Job</li>
+                <li class="profile_mob">Profile</li>
                 <li><strong><a href="{%url 'edit-job'%}">Post Jobs</a></strong></li>
                 <li>Messages</li>
             </ul>
             <div class="menu-list">
 
             </div>
+            <section class="profile_mobile">
+                <p class="closeMobile">X</p>
+                <div class="profile_mobile_img">
+                    <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
+                </div>
+                <h3 class="profile_mobile_name">{{user.first_name}} {{user.last_name}}</h3>
+                <h4 class="profile_mobile_talent">{{user_profile.talent}}</h4>
+                <h5 class="profile_mobile_location">{{user_profile.user_location}}</h5>
+                <div class="divided_mobile-line"></div>
+                <div class="profile_mobile_bio">
+                    <h3 class="profile_mobile_name">Bio</h3>
+                    <h5 class="profile_mobile_bio">{{user.user_bio}}</h5>
+                </div>
+                <div class="divided-line"></div>
+                <div class="profile_mobile_skills">
+                    <h3 class="profile_mobile_name">Skills</h3>
+                    <ul class="profile_mobile_bio">
+                        <li>{{user_profile.skills}}</li>
+                    </ul>
+                </div>
+                <div class="divided-line"></div>
+                <div class="profile_mobile_portfolio">
+                    <h3 class="profile_mobile_name">Portfolio</h3>
+                    <p class="port_mobile_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="profile_mobile_contact">
+                    <h3 class="profile_mobile_name">Email</h3>
+                    <ul class="profile_mobile_bio">
+                        <li><a href="mailto:{{user.email}}">{{user.email}}</a></li>
+    
+                    </ul>
+                </div>
+            </section>
         </section>
         <section class="main_body">
             <div class="main_body_title">
@@ -118,11 +152,106 @@
                         <h1>Remote</h1>
                         <h1>Entry levels & beginners</h1>
                     </div>
-                    <button>Apply Now</button>
+                    <button><a href="mailto:name@mail.com">Apply Now</a></button>
                 </div>
             </div>
 
 
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button><a href="mailto:name@mail.com">Apply Now</a></button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button><a href="mailto:name@mail.com">Apply Now</a></button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button><a href="mailto:name@mail.com">Apply Now</a></button>
+                </div>
+            </div>
+
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button><a href="mailto:name@mail.com">Apply Now</a></button>
+                </div>
+            </div>
         </section>
     </section>
     <footer>
@@ -190,8 +319,8 @@
                     <p>About Us</p>
                 </div>
                 <div class="quick_links">
-                    <p>Company</p>
-                    <ul>
+                    <p class="comp">Company <span class="add">&#9660;</span></p>
+                    <ul class="links_quick">
                         <li><a>Privacy Policy</a></li>
                         <li><a>Terms & Service</a></li>
                         <li><a>About Us</a></li>

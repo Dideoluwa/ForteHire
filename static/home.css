@@ -132,7 +132,9 @@ nav {
     font-weight: 700;
     text-align: center;
 }
-
+.profile_mobile{
+    display: none;
+}
 .profile_portfolio p a {
     color: #8325B0;
 }
@@ -220,7 +222,9 @@ nav {
     font-size: 18px;
     font-weight: bold;
 }
-
+.add{
+    display: none;
+}
 .main_body_jobs_head p span {
     font-size: 14px;
 }
@@ -250,6 +254,7 @@ nav {
 }
 
 .job_details_more button {
+    text-decoration: none;
     color: white;
     cursor: pointer;
     background-color: #8325B0;
@@ -257,7 +262,10 @@ nav {
     padding: 10px 15px;
     border-radius: 8px;
 }
-
+.job_details_more button a{
+    color: white;
+    text-decoration: none;
+}
 footer {
     background: #F7F7F7;
     color: black;
@@ -326,7 +334,8 @@ footer {
     max-width: 50%;
 
 }
-.goals_contact .imgs{
+
+.goals_contact .imgs {
     display: flex;
     margin-top: 1px;
     margin-left: 0;
@@ -334,6 +343,7 @@ footer {
     cursor: pointer;
     width: 100%;
 }
+
 .goals_contact p {
     font-size: 14px;
     width: 100%
@@ -347,11 +357,12 @@ footer {
     .nav_list {
         display: none;
     }
-
     .nav_searchBar {
         display: none;
     }
-
+    .goals_links svg{
+        width: 150px;
+    }
     .menu_searchBar input {
         border-radius: 8px;
         padding: 13px 15px;
@@ -385,7 +396,6 @@ footer {
 
     .menu {
         position: fixed;
-        font-family: 'Roboto', sans-serif;
         width: 0;
         height: 60%;
         right: 0;
@@ -397,6 +407,21 @@ footer {
         background-color: rgb(69, 37, 84);
         justify-content: center;
         /* align-items: center; */
+        transition: 0.2s;
+        overflow-x: hidden;
+        z-index: 1000;
+    }
+    .profile_mobile{
+        position: fixed;
+        width: 0;
+        height: 100%;
+        right: 0;
+        top: 0;
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        background-color: white;
+        justify-content: center;
         transition: 0.2s;
         overflow-x: hidden;
         z-index: 1000;
@@ -475,10 +500,12 @@ footer {
     .goals_links {
         max-width: 50%;
     }
-    .quick_links{
+
+    .quick_links {
         /* padding: 20px; */
         margin-bottom: 20px;
     }
+
     .goals_contact {
         margin-top: 20px;
         display: flex;
@@ -486,15 +513,258 @@ footer {
         flex: 1;
         /* width: 250%; */
         max-width: 100%;
-    
+
     }
-    .goals_contact .imgs{
-    width: 30%;
-    height: 30%;
-        
+
+    .goals_contact .imgs {
+        width: 30%;
+        height: 30%;
+
     }
-    .goals_contact .imgs svg{
+
+    .goals_contact .imgs svg {
         /* padding: 20px; */
         margin-left: 12px;
     }
+    .profile_mobile_img {
+        /* margin-top: 40%; */
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+    
+    .profile_mobile_img img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        /* height: 100%; */
+    }
+    
+    .profile_mobile_name {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    .profile_mobile_talent {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    
+    .profile_mobile_location {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .profile_mobile_portfolio p a {
+        color: #8325B0;
+    }
+    
+    .profile_mobile_bio {
+        color: black;
+        margin: auto;
+        font-size: 24px;
+        padding: 0px 10px;
+    }
+    
+    .profile_mobile_bio li {
+        padding: 7px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .profile_mobile_bio li a {
+        text-decoration: none;
+        color: #8325B0;
+    }
+    .profile_mobile_skills ul li{
+        color: black;
+        font-size: 16px;
+    }
+    .profile_mobile{
+        color: black;
+    }
+    .port_mobile_link {
+        text-align: center;
+    }
+    .closeMobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main_body_title{
+        padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .main_body_jobs{
+        padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .main_body_title p{
+      font-size: 12px;
+    }
+    .main_body_jobs p{
+        font-size: 12px; 
+    }
+    .main_body_jobs_head p span {
+        font-size: 10px;
+    }
+    .main_body_jobs_head .location {
+        font-size: 10px;
+    }
+    .job_details h1 {
+        font-size: 11px;
+        /* margin-bottom: 20px; */
+    }
+    
+    .job_details p {
+        font-size: 10px;
+        /* margin-bottom: 20px; */
+    }
+    .job_req h1{
+        font-size: 12px;
+    }
+    .menu {
+        height: 100%;
+    }
+    .add{
+        display: inline-block;
+    }
+    .goals_contact .imgs {
+        width: 40%;
+        height: 40%;
+
+    }
+    .footer_init {
+        margin-left: 20px;
+    }
+    .links_quick{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .links_quick{
+        font-size: 10px;
+    }
+    .footer_init {
+        margin-left: 10px;
+    }
+    .quick_links p{
+        font-size: 12px;
+    }
+    .goals{
+        font-size: 12px;
+    }
+    .nav_logo svg{
+        width: 90px;
+    }
+    .goals_links svg{
+        width: 90px;
+    }
+    .profile_mobile_img {
+        /* margin-top: 40%; */
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+    
+    .profile_mobile_img img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        /* height: 100%; */
+    }
+    
+    .profile_mobile_name {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    .profile_mobile_talent {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    
+    .profile_mobile_location {
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .profile_mobile_portfolio p a {
+        color: #8325B0;
+    }
+    
+    .profile_mobile_bio {
+        color: black;
+        margin: auto;
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+    
+    .profile_mobile_bio li {
+        padding: 7px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .profile_mobile_bio li a {
+        text-decoration: none;
+        color: #8325B0;
+    }
+    .profile_mobile_skills ul li{
+        color: black;
+        font-size: 10px;
+    }
+    .profile_mobile{
+        color: black;
+    }
+    .port_mobile_link {
+        text-align: center;
+    }
+    .closeMobile{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 390px){
+    
+    .job_details_more button{
+      font-size: 12px;
+      padding: 10px 20px;
+    }
+
+    .goals_contact .imgs svg {
+        width: 100%;
+    }
+    .goals_contact .imgs {
+        width: 50%;
+        margin-left: -4px;
+        height: 40%;
+
+    }
+
 }

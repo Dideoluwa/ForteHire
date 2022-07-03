@@ -2,12 +2,19 @@ let btn = document.querySelector('.btn')
 let form = document.querySelector('.form')
 let inpt = document.querySelector('.input1')
 let inpt1 = document.querySelector('.input2')
+const image_input = document.querySelector("#image-input");
 let inpt2 = document.querySelector('.input3')
 let inpt3 = document.querySelector('.input4')
-// let inpt4 = document.querySelector('.input5')
 let inpt4 = document.querySelector('.input6')
 
-// for (let inpt of input) 
+image_input.addEventListener("change", function() {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+      const uploaded_image = reader.result;
+      document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+    });
+    reader.readAsDataURL(this.files[0]);
+  });
     form.addEventListener("input", function (e) {
         if (inpt.value.trim() && inpt1.value.trim() && inpt2.value.trim() && inpt3.value.trim() && inpt4.value.trim() === 0) {
             btn.disabled = true
@@ -21,6 +28,7 @@ let inpt4 = document.querySelector('.input6')
             btn.style.cursor = 'pointer'
         }
     })
+
 
     // function updateSubmitBtn(){
     //     const firstNameValue = input.value.trim();
