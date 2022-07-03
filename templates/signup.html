@@ -120,31 +120,31 @@
         </div>
         <div class="secondPart">
             <form action="" method="post">
-                {% csrf_token %}
+                    {% csrf_token %}
                 <div class="container">
                     <h1>Sign Up</h1>
                     <p class="inst">Please fill in this form to create an account.</p>
-                    <div>
+                    <!--Do not delete-->
+                    <!--<div>
                         <style>
-                            h4 {
-                                color: red;
-                            }
+                            h4{color: red;}
                         </style>
-                        {% for message in messages %}
-                        <h4>{{message}}</h4>
+                        {% for message in messages%}
+                            <h4>{{messages}}</h4>
                         {%endfor%}
-                    </div>
+                    </div>-->
+                    
                     <div class="label">
                         <p><b>First Name</b></p>
                         <p class="important">*</p>
                     </div>
-                    <input type="text" placeholder="ayowande" name="username">
+                    <input type="text" placeholder="ayowande" name="firstname">
 
                     <div class="label">
                         <p><b>Last Name</b></p>
                         <p class="important">*</p>
                     </div>
-                    <input type="text" placeholder="Brown" name="username">
+                    <input type="text" placeholder="Brown" name="lastname">
 
 
                     <div class="label">
