@@ -13,9 +13,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-.init-body{
+
+.init-body {
     display: flex;
 }
+
 nav {
     /* position: fixed; */
     background: #F7F7F7;
@@ -141,13 +143,15 @@ nav {
     list-style: none;
     text-align: center;
 }
-.contact-bio li{
+
+.contact-bio li {
     margin-top: 15px;
     background: #EBEBEB;
     box-shadow: 0px 4px 4px rgba(30, 30, 30, 0.1);
     border-radius: 8px;
 }
-.profile_bio li a{
+
+.profile_bio li a {
     text-decoration: none;
     color: #8325B0;
 }
@@ -164,7 +168,8 @@ nav {
     /* margin-top: 40px; */
     font-size: 80px;
 }
-.main_body_title{
+
+.main_body_title {
     display: flex;
     padding: 20px;
     margin-top: 20px;
@@ -174,51 +179,63 @@ nav {
     margin-right: 40px;
     justify-content: space-between;
 }
-.main_body_title p{
+
+.main_body_title p {
     font-size: 18px;
     color: #1E1E1E;
 }
-.main_body_title svg{
+
+.main_body_title svg {
     cursor: pointer;
 }
-.main_body_jobs_head{
+
+.main_body_jobs_head {
     display: flex;
     justify-content: space-between;
     padding: 12px 0px;
 }
-.main_body_jobs{
+
+.main_body_jobs {
     background: #F7F7F7;
     padding: 32px;
     border-radius: 8px;
     margin: 28px 40px;
 }
-.main_body_jobs_head p{
+
+.main_body_jobs_head p {
     font-size: 18px;
     font-weight: bold;
 }
-.main_body_jobs_head p span{
+
+.main_body_jobs_head p span {
     font-size: 14px;
 }
-.main_body_jobs_head .location{
+
+.main_body_jobs_head .location {
     font-size: 14px;
 }
-.job_details h1{
+
+.job_details h1 {
     font-size: 17px;
     margin-bottom: 20px;
 }
-.job_details p{
+
+.job_details p {
     font-size: 16px;
     margin-bottom: 20px;
 }
-.job_req h1{
+
+.job_req h1 {
     margin-bottom: 8px;
     font-size: 16px;
 }
-.job_details_more{
+
+.job_details_more {
     justify-content: space-between;
     display: flex;
 }
-.job_details_more button{
+
+.job_details_more button {
     color: white;
     cursor: pointer;
     background-color: #8325B0;
@@ -226,35 +243,76 @@ nav {
     padding: 10px 15px;
     border-radius: 8px;
 }
-footer{
+
+footer {
     background: #F7F7F7;
     color: black;
 }
-.footer_init{
+
+.footer_init {
     margin-top: 80px;
     display: flex;
-    margin-left: 30%;
     margin-bottom: 150px;
     justify-content: space-around;
 }
-.footer_init .quick_links{
+
+.footer_init .quick_links {
     font-size: 18px;
 }
-.footer_cover{
+
+.footer_cover {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 
 }
-.footer_init .quick_links p{
+
+.footer_init .quick_links p {
     margin-bottom: 12px;
 }
-.footer_init .quick_links ul li{
+
+.footer_init .quick_links ul li {
     list-style: none;
     margin-bottom: 8px;
     cursor: pointer;
 
 }
-.footer_cover svg{
+
+.footer_cover svg {
     margin: auto;
+}
+
+.goals {
+    /* flex: 1; */
+    /* display: flex; */
+    width: 100%;
+}
+
+.goals_links {
+    max-width: 20%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.goals_links svg {
+    margin-top: 1px;
+    margin-left: 0;
+    height: 20%;
+    cursor: pointer;
+    width: 60%;
+}
+
+.goals_contact {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 100%;
+
+}
+
+.goals_contact p {
+    font-size: 14px;
+    width: 100%
 }

@@ -135,7 +135,7 @@ body {
     margin-bottom: 70px;
 }
 .main_form button:hover{
-    transition: all 0.2s ease-in-out;
-    background: #8325B0;
-    color: #FFFFFF;
+    /* transition: all 0.2s ease-in-out; */
+    /* background: #8325B0; */
+    /* color: #FFFFFF; */
 }
