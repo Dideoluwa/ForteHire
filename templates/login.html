@@ -61,15 +61,14 @@
                     <div>
                     <h1>Log in</h1>
                     <!--Do not delete-->
-                     <!-- <div>
-  
-                          <style>
-                              h4{color: red;}
-                          </style>
-                          {% for message in messages%}
-                              <h4>{{messages}}</h4>
-                          {%endfor%}
-                      </div>-->
+                     <div>
+                        <style>
+h4{color: red;}
+                        </style>
+                        {% for message in messages%}
+                        <h4>{{messages}}</h4>
+                        {%endfor%}
+                    </div>
                     
                     <label for="uname"><b>Email</b></label>
                     <input type="email" placeholder="ayowandebrown@gmail.com" name="email" required>
@@ -84,7 +83,7 @@
                 </div>
             </form>
             <div class="alt">
-                <p>Don't have an account? <a href="{%url 'signup' %}">Sign-up</a> here</p>
+                <p>Don't have an account? <a href="{% url 'signup' %}">Sign-up</a> here</p>
             </div>
         </div>
     </div>
