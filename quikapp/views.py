@@ -30,7 +30,7 @@ def SignUpView(request):
         email=request.POST['email']
         password=request.POST['password']
         password2=request.POST['password2']
-        user_location=request.POST['countries']
+        #user_location=request.POST['countries'] first_name=user_location
         
         if password != password2:
             messages.info(request, "Password don't match")
@@ -40,14 +40,15 @@ def SignUpView(request):
                 messages.info(request, "Email Taken")
                 redirect('.')
             else:
-                user=User.objects.create_user(username=firstname, last_name=lastname, email=email, password=password,first_name=user_location)
+                user=User.objects.create_user(username=firstname, last_name=lastname, email=email, password=password,)
                 user.save()
                 login(request, user)
+                redirect('home')
 
                 user_model=User.objects.get(username=firstname)
                 new_user= UserProfile.objects.create(user=user_model, id_user=user_model.id)
                 new_user.save()
-                redirect('home/')
+                redirect('home')
     else:
         return render(request, 'signup.html')
 

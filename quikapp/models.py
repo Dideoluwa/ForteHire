@@ -13,7 +13,6 @@ class UserProfile(models.Model):
     id_user=models.IntegerField()
     user_image=models.ImageField(upload_to='user_images')
     user_bio=models.TextField(blank=True)
-    user_location= CountryField(blank_label='Select Country')
     years_of_experience=models.CharField(max_length=12)
     resume_upload=models.FileField(upload_to='users_resume')
     
