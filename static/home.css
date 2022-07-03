@@ -13,7 +13,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
-
+.init-body{
+    display: flex;
+}
 nav {
     /* position: fixed; */
     background: #F7F7F7;
@@ -66,13 +68,14 @@ nav {
 }
 
 .profile {
-    width: 380px;
-    position: fixed;
+    height: 140%;
+    width: 880px;
+    /* position: fixed; */
     z-index: 1;
     background: #F7F7F7;
     overflow-y: scroll;
-    top: 11%;
-    bottom: 0;
+    top: 0%;
+    /* bottom: 0%; */
     padding-top: 20px;
 }
 
@@ -114,6 +117,10 @@ nav {
     text-align: center;
 }
 
+.profile_portfolio p a {
+    color: #8325B0;
+}
+
 .divided-line {
     height: 0.5px;
     margin-top: 20px;
@@ -122,23 +129,132 @@ nav {
     background-color: #1E1E1E;
     color: #1E1E1E;
 }
-.profile_bio{
+
+.profile_bio {
     margin: auto;
     font-size: 18px;
     padding: 0px 10px;
 }
-.profile_bio li{
+
+.profile_bio li {
     padding: 7px;
-    margin-left: 10%;
-    /* text-align: center; */
-}
-.port_link{
+    list-style: none;
     text-align: center;
 }
-.main_body{
-    margin-left: 380px;
+.contact-bio li{
+    margin-top: 15px;
+    background: #EBEBEB;
+    box-shadow: 0px 4px 4px rgba(30, 30, 30, 0.1);
+    border-radius: 8px;
 }
-.main_body p{
+.profile_bio li a{
+    text-decoration: none;
+    color: #8325B0;
+}
+
+.port_link {
+    text-align: center;
+}
+
+.main_body {
+    /* margin-left: 380px; */
+}
+
+.main_body p {
     /* margin-top: 40px; */
     font-size: 80px;
+}
+.main_body_title{
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    background: #F7F7F7;
+    /* margin: auto; */
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+}
+.main_body_title p{
+    font-size: 18px;
+    color: #1E1E1E;
+}
+.main_body_title svg{
+    cursor: pointer;
+}
+.main_body_jobs_head{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+.main_body_jobs{
+    background: #F7F7F7;
+    padding: 32px;
+    border-radius: 8px;
+    margin: 28px 40px;
+}
+.main_body_jobs_head p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.main_body_jobs_head p span{
+    font-size: 14px;
+}
+.main_body_jobs_head .location{
+    font-size: 14px;
+}
+.job_details h1{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.job_details p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.job_req h1{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.job_details_more{
+    justify-content: space-between;
+    display: flex;
+}
+.job_details_more button{
+    color: white;
+    cursor: pointer;
+    background-color: #8325B0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+footer{
+    background: #F7F7F7;
+    color: black;
+}
+.footer_init{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 30%;
+    margin-bottom: 150px;
+    justify-content: space-around;
+}
+.footer_init .quick_links{
+    font-size: 18px;
+}
+.footer_cover{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+.footer_init .quick_links p{
+    margin-bottom: 12px;
+}
+.footer_init .quick_links ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+}
+.footer_cover svg{
+    margin: auto;
 }
