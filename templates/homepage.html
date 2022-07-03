@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -26,7 +27,7 @@
             <ul>
                 <li>Home</li>
                 <li>Find Job</li>
-                <li>Hire Creatives</li>
+                <li><strong><a href="{%url 'edit-job'%}">Post Jobs</a></strong></li>
                 <li>Messages</li>
             </ul>
         </div>
@@ -39,39 +40,32 @@
             <div class="profile_img">
                 <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
             </div>
-            <h3 class="profile_name">Oluwapelumi Akindele</h3>
-            <h4 class="profile_talent">Graphics Designer</h4>
-            <h5 class="profile_location">Lagos, Nigeria</h5>
+            <h3 class="profile_name">{{user.first_name}} {{user.last_name}}</h3>
+            <h4 class="profile_talent">{{user_profile.talent}}</h4>
+            <h5 class="profile_location">{{user_profile.user_location}}</h5>
             <div class="divided-line"></div>
             <div class="profile_bio">
                 <h3 class="profile_name">Bio</h3>
-                <h5 class="profile_bio">I am a passionate product designer with over seven years of
-                    experience, I reside in Lagos, Nigeria and I’ve had the privilee of working with Start-Up companies
-                    over
-                    the time and I am currently opened to junior roles and mid-level roles.</h5>
+                <h5 class="profile_bio">{{user.user_bio}}</h5>
             </div>
             <div class="divided-line"></div>
             <div class="profile_skills">
                 <h3 class="profile_name">Skills</h3>
                 <ul class="profile_bio">
-                    <li>Product Design</li>
-                    <li>3D Animation</li>
-                    <li>Graphic Design</li>
-                    <li>Interactive Design</li>
+                    <li>{{user_profile.skills}}</li>
                 </ul>
             </div>
             <div class="divided-line"></div>
             <div class="profile_portfolio">
                 <h3 class="profile_name">Portfolio</h3>
-                <p class="port_link"><a href="https://ernestina.biz">https://ernestina.biz</a></p>
+                <p class="port_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
             </div>
             <div class="divided-line"></div>
             <div class="profile_contact">
                 <h3 class="profile_name">Contact</h3>
-                <ul class="profile_bio contact-bio">
-                    <li><a href="mailto:test@test.com">test@test.com</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">LinkedIn</a></li>
+                <ul class="profile_bio">
+                    <li><a href="{{user.email}}">Email</a></li>
+
                 </ul>
             </div>
         </section>

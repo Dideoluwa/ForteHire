@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../static/signUp.css">
     <link rel="stylesheet" href="{% static 'signUp.css' %}">
     <title>Sign-up</title>
 </head>
@@ -58,20 +57,18 @@
                 {% csrf_token %}
                 <div class="container">
                     <h1>Sign Up</h1>
-
-                    <div>
-
-                        <p class="inst">Please fill in this form to create an account.</p>
+                    <div> 
+                        <!-- <p class="inst">Please fill in this form to create an account.</p> -->
                         <!--Do not delete-->
-                        <!--<div>
+                        <div>
                         <style>
                             h4{color: red;}
                         </style>
                         {% for message in messages%}
                             <h4>{{messages}}</h4>
                         {%endfor%}
-                    </div>-->
-
+                        </div>
+                    
                         <div class="label">
                             <p><b>First Name</b></p>
                             <p class="important">*</p>
@@ -102,11 +99,10 @@
                             <p class="important">*</p>
                         </div>
                         <input type="password" placeholder="******" name="password2">
-
-
-
                         <button class="clearfix" type="submit">Sign Up</button>
                     </div>
+                
+                </div>
             </form>
             <div class="alt">
                 <p>Already have an account? <a href="{% url 'login' %}">Login</a> here</p>

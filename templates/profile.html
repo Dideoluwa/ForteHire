@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -125,4 +125,11 @@
     <script src="../static/profile.js"></script>
 </body>
 
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>{{user.first_name}} {{user.last_name}}</h1>
+</body>
 </html>
