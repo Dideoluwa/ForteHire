@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -83,7 +84,7 @@ nav {
 
 .profile {
     height: 140%;
-    width: 480px;
+    width: 470px;
     /* position: fixed; */
     z-index: 1;
     background: #F7F7F7;
@@ -130,9 +131,11 @@ nav {
     font-weight: 400;
     text-align: center;
 }
-.profile_mobile{
+
+.profile_mobile {
     display: none;
 }
+
 .profile_portfolio p a {
     color: #8325B0;
 }
@@ -174,6 +177,47 @@ nav {
     text-align: center;
 }
 
+.form_inputs {
+    margin: auto;
+    flex: 1;
+    max-width: 92%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_form_inputs {
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+
+.main_form_inputs label {
+    margin: 15px 0px;
+    color: #1E1E1E;
+    font-size: 22px;
+}
+
+.main_form button {
+    transition: all 0.2s ease-in-out;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 8px;
+    background: #8325B0;
+    border: 0.5px solid #1E1E1E;
+    width: 98%;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.main_form_inputs input {
+    padding: 15px 20px;
+    border: 0.5px solid #1E1E1E;
+    border-radius: 8px;
+    width: 100%;
+}
+
 .main_body {
     width: 70%;
 }
@@ -197,6 +241,7 @@ nav {
 .main_body_title p {
     font-size: 18px;
     color: #1E1E1E;
+    margin: auto;
 }
 
 .main_body_title svg {
@@ -220,9 +265,11 @@ nav {
     font-size: 18px;
     font-weight: 400;
 }
-.add{
+
+.add {
     display: none;
 }
+
 .main_body_jobs_head p span {
     font-size: 14px;
 }
@@ -263,10 +310,12 @@ nav {
     padding: 10px 15px;
     border-radius: 8px;
 }
-.job_details_more button a{
+
+.job_details_more button a {
     color: white;
     text-decoration: none;
 }
+
 footer {
     background: #F7F7F7;
     color: black;
@@ -354,24 +403,39 @@ footer {
     display: none;
 }
 
-.main_body .main_body_title .hire_info{
+.main_body .hire_info {
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
+}
+
+#post-txt:focus {
+    outline: none;
+    border: 0.5px solid #8325B0;
+}
+
+.main_form_inputs input:focus {
+    outline: none;
+    border: 0.5px solid #8325B0;
 }
 
 @media screen and (max-width: 912px) {
-    .main_body{
+    .main_body {
         width: 100%;
     }
+
     .nav_list {
         display: none;
     }
+
     .nav_searchBar {
         display: none;
     }
-    .goals_links svg{
+
+    .goals_links svg {
         width: 150px;
     }
+
     .menu_searchBar input {
         border-radius: 8px;
         padding: 13px 15px;
@@ -420,7 +484,8 @@ footer {
         overflow-x: hidden;
         z-index: 1000;
     }
-    .profile_mobile{
+
+    .profile_mobile {
         position: fixed;
         width: 0;
         height: 100%;
@@ -535,6 +600,7 @@ footer {
         /* padding: 20px; */
         margin-left: 12px;
     }
+
     .profile_mobile_img {
         /* margin-top: 40%; */
         margin: auto;
@@ -545,65 +611,70 @@ footer {
         height: 100px;
         margin-bottom: 12px;
     }
-    
+
     .profile_mobile_img img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
         /* height: 100%; */
     }
-    
+
     .profile_mobile_name {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 12px;
     }
-    
+
     .profile_mobile_talent {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
-    
+
     .profile_mobile_location {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
     }
+
     .profile_mobile_portfolio p a {
         color: #8325B0;
     }
-    
+
     .profile_mobile_bio {
         color: black;
         margin: auto;
         font-size: 24px;
         padding: 0px 10px;
     }
-    
+
     .profile_mobile_bio li {
         padding: 7px;
         list-style: none;
         text-align: center;
     }
-    
+
     .profile_mobile_bio li a {
         text-decoration: none;
         color: #8325B0;
     }
-    .profile_mobile_skills ul li{
+
+    .profile_mobile_skills ul li {
         color: black;
         font-size: 16px;
     }
-    .profile_mobile{
+
+    .profile_mobile {
         color: black;
     }
+
     .port_mobile_link {
         text-align: center;
     }
-    .closeMobile{
+
+    .closeMobile {
         position: absolute;
         top: 0;
         right: 0;
@@ -612,78 +683,116 @@ footer {
 }
 
 @media screen and (max-width: 540px) {
-    .main_body_title{
+    .main_form_inputs label {
+        margin: 6px 0px;
+        color: #1E1E1E;
+        font-size: 12px;
+    }
+
+    .main_form_inputs input {
+        padding: 10px 15px;
+    }
+
+    .main_body_title {
         padding: 15px;
         margin-left: 5px;
         margin-right: 5px;
     }
-    .main_body_jobs{
+
+    .main_body_jobs {
         padding: 15px;
         margin-left: 5px;
         margin-right: 5px;
     }
-    .main_body_title p{
-      font-size: 12px;
+
+    .main_body_title p {
+        font-size: 12px;
     }
-    .main_body_jobs p{
-        font-size: 12px; 
+
+    .main_body .hire_info {
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 12px;
+        margin-bottom: 20px;
+        text-align: center;
     }
+
+    .main_body_jobs p {
+        font-size: 12px;
+    }
+
     .main_body_jobs_head p span {
         font-size: 10px;
     }
+
     .main_body_jobs_head .location {
         font-size: 10px;
     }
+
     .job_details h1 {
         font-size: 11px;
         /* margin-bottom: 20px; */
     }
-    
+
     .job_details p {
         font-size: 10px;
         /* margin-bottom: 20px; */
     }
-    .job_req h1{
+
+    .job_req h1 {
         font-size: 12px;
     }
+
     .menu {
         height: 100%;
     }
-    .add{
+
+    .add {
         display: inline-block;
     }
+
     .goals_contact .imgs {
         width: 40%;
         height: 40%;
 
     }
+
     .footer_init {
         margin-left: 20px;
     }
-    .links_quick{
+
+    .links_quick {
         display: none;
     }
-    .toggle{
+
+    .toggle {
         display: block;
     }
-    .links_quick{
+
+    .links_quick {
         font-size: 10px;
     }
+
     .footer_init {
         margin-left: 10px;
     }
-    .quick_links p{
+
+    .quick_links p {
         font-size: 12px;
     }
-    .goals{
+
+    .goals {
         font-size: 12px;
     }
-    .nav_logo svg{
+
+    .nav_logo svg {
         width: 90px;
     }
-    .goals_links svg{
+
+    .goals_links svg {
         width: 90px;
     }
+
     .profile_mobile_img {
         /* margin-top: 40%; */
         margin: auto;
@@ -694,81 +803,88 @@ footer {
         height: 100px;
         margin-bottom: 12px;
     }
-    
+
     .profile_mobile_img img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
         /* height: 100%; */
     }
-    
+
     .profile_mobile_name {
         font-size: 16px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     }
-    
+
     .profile_mobile_talent {
         font-size: 12px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 6px;
+        margin-bottom: 5px;
     }
-    
+
     .profile_mobile_location {
         font-size: 12px;
         font-weight: 700;
         text-align: center;
     }
+
     .profile_mobile_portfolio p a {
         color: #8325B0;
     }
-    
+
     .profile_mobile_bio {
         color: black;
         margin: auto;
         font-size: 12px;
         padding: 0px 10px;
     }
-    
+
     .profile_mobile_bio li {
         padding: 7px;
         list-style: none;
         text-align: center;
     }
-    
+
     .profile_mobile_bio li a {
         text-decoration: none;
         color: #8325B0;
     }
-    .profile_mobile_skills ul li{
+
+    .profile_mobile_skills ul li {
         color: black;
         font-size: 10px;
     }
-    .profile_mobile{
+
+    .profile_mobile {
         color: black;
     }
+
     .port_mobile_link {
         text-align: center;
     }
-    .closeMobile{
+
+    .closeMobile {
         position: absolute;
         top: 0;
         right: 0;
         font-size: 45px;
     }
 }
-@media screen and (max-width: 390px){
-    
-    .job_details_more button{
-      font-size: 12px;
-      padding: 10px 20px;
+
+@media screen and (max-width: 390px) {
+
+    .job_details_more button {
+        font-size: 12px;
+        padding: 10px 20px;
     }
 
     .goals_contact .imgs svg {
         width: 100%;
     }
+
     .goals_contact .imgs {
         width: 50%;
         margin-left: -4px;

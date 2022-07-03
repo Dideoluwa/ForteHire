@@ -23,11 +23,16 @@
                     fill="#8325B0" />
             </svg>
         </div>
+        <div class="hamburger-icon">
+            <div class="first-icon"></div>
+            <div class="second-icon"></div>
+            <div class="third-icon"></div>
+        </div>
         <div class="nav_list">
             <ul>
-                <li>Home</li>
-                <li>Find Job</li>
+                <li><a href="{%url 'home'%}">Home</a></li>
                 <li><strong><a href="{%url 'edit-job'%}">Post Jobs</a></strong></li>
+                <li>Bookmarked</li>
                 <li>Messages</li>
             </ul>
         </div>
@@ -35,43 +40,124 @@
             <input type="search" class="nav_input nav_input_icon" placeholder="Search">
         </div>
     </nav>
-    <section class="profile">
-        <div class="profile_img">
-            <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
-        </div>
-        <h3 class="profile_name">{{user.first_name}} {{user.last_name}}</h3>
-        <h4 class="profile_talent">{{user_profile.talent}}</h4>
-        <h5 class="profile_location">{{user_profile.user_location}}</h5>
-        <div class="divided-line"></div>
-        <div class="profile_bio">
-            <h3 class="profile_name">Bio</h3>
-            <h5 class="profile_bio">{{user.user_bio}}</h5>
-        </div>
-        <div class="divided-line"></div>
-        <div class="profile_skills">
-            <h3 class="profile_name">Skills</h3>
-            <ul class="profile_bio">
-                <li>{{user_profile.skills}}</li>
+    <section class="init-body">
+        <section class="profile">
+            <div class="profile_img">
+                <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
+            </div>
+            <h3 class="profile_name">{{user.first_name}} {{user.last_name}}</h3>
+            <h4 class="profile_talent">{{user_profile.talent}}</h4>
+            <h5 class="profile_location">{{user_profile.user_location}}</h5>
+            <div class="divided-line"></div>
+            <div class="profile_bio">
+                <h3 class="profile_name">Bio</h3>
+                <h5 class="profile_bio">{{user.user_bio}}</h5>
+            </div>
+            <div class="divided-line"></div>
+            <div class="profile_skills">
+                <h3 class="profile_name">Skills</h3>
+                <ul class="profile_bio">
+                    <li>{{user_profile.skills}}</li>
+                </ul>
+            </div>
+            <div class="divided-line"></div>
+            <div class="profile_portfolio">
+                <h3 class="profile_name">Portfolio</h3>
+                <p class="port_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
+            </div>
+            <div class="divided-line"></div>
+            <div class="profile_contact">
+                <h3 class="profile_name">Email</h3>
+                <ul class="profile_bio">
+                    <li><a href="mailto:{{user.email}}">{{user.email}}</a></li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="menu">
+            <p class="menu-close">X</p>
+            <div class="menu_searchBar">
+                <input type="search" class="nav_input nav_input_icon" placeholder="Search">
+            </div>
+            <ul>
+                <li><a href="{%url 'home'%}">Home</a></li>
+                <li class="profile_mob">Profile</li>
+                <li><strong><a href="{%url 'edit-job'%}">Post Jobs</a></strong></li>
+                <li>Bookmarked</li>
+                <li>Messages</li>
             </ul>
-        </div>
-        <div class="divided-line"></div>
-        <div class="profile_portfolio">
-            <h3 class="profile_name">Portfolio</h3>
-            <p class="port_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
-        </div>
-        <div class="divided-line"></div>
-        <div class="profile_contact">
-            <h3 class="profile_name">Contact</h3>
-            <ul class="profile_bio">
-                <li><a href="{{user.email}}">Email</a></li>
-               
-            </ul>
-        </div>
-    </section>
-    <section class="main_body">
-        <p>
-         
-            </p>
+            <div class="menu-list">
+
+            </div>
+            <section class="profile_mobile">
+                <p class="closeMobile">X</p>
+                <div class="profile_mobile_img">
+                    <img src="../static/img/andre-benz-qJfznuTMAYA-unsplash.jpg">
+                </div>
+                <h3 class="profile_mobile_name">{{user.first_name}} {{user.last_name}}</h3>
+                <h4 class="profile_mobile_talent">{{user_profile.talent}}</h4>
+                <h5 class="profile_mobile_location">{{user_profile.user_location}}</h5>
+                <div class="divided_mobile-line"></div>
+                <div class="profile_mobile_bio">
+                    <h3 class="profile_mobile_name">Bio</h3>
+                    <h5 class="profile_mobile_bio">{{user.user_bio}}</h5>
+                </div>
+                <div class="divided-line"></div>
+                <div class="profile_mobile_skills">
+                    <h3 class="profile_mobile_name">Skills</h3>
+                    <ul class="profile_mobile_bio">
+                        <li>{{user_profile.skills}}</li>
+                    </ul>
+                </div>
+                <div class="divided-line"></div>
+                <div class="profile_mobile_portfolio">
+                    <h3 class="profile_mobile_name">Portfolio</h3>
+                    <p class="port_mobile_link"><a href="{{user_profile.portfolio_link}}">{{user_profile.portfolio_link}}</a></p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="profile_mobile_contact">
+                    <h3 class="profile_mobile_name">Email</h3>
+                    <ul class="profile_mobile_bio">
+                        <li><a href="mailto:{{user.email}}">{{user.email}}</a></li>
+    
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section class="main_body">
+            <div class="main_body_title">
+                <p>Vacancies according to your skills</p>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 24C16.2652 24 16.5196 23.8946 16.7071 23.7071C16.8946 23.5196 17 23.2652 17 23C17 22.7348 16.8946 22.4804 16.7071 22.2929C16.5196 22.1054 16.2652 22 16 22C15.7348 22 15.4804 22.1054 15.2929 22.2929C15.1054 22.4804 15 22.7348 15 23C15 23.2652 15.1054 23.5196 15.2929 23.7071C15.4804 23.8946 15.7348 24 16 24V24ZM16 17C16.2652 17 16.5196 16.8946 16.7071 16.7071C16.8946 16.5196 17 16.2652 17 16C17 15.7348 16.8946 15.4804 16.7071 15.2929C16.5196 15.1054 16.2652 15 16 15C15.7348 15 15.4804 15.1054 15.2929 15.2929C15.1054 15.4804 15 15.7348 15 16C15 16.2652 15.1054 16.5196 15.2929 16.7071C15.4804 16.8946 15.7348 17 16 17V17ZM16 10C16.2652 10 16.5196 9.89464 16.7071 9.70711C16.8946 9.51957 17 9.26522 17 9C17 8.73478 16.8946 8.48043 16.7071 8.29289C16.5196 8.10536 16.2652 8 16 8C15.7348 8 15.4804 8.10536 15.2929 8.29289C15.1054 8.48043 15 8.73478 15 9C15 9.26522 15.1054 9.51957 15.2929 9.70711C15.4804 9.89464 15.7348 10 16 10V10Z"
+                        stroke="#1E1E1E" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="main_body_jobs">
+                <div class="main_body_jobs_head">
+                    <p>NFT group of companys <span>- posted 5min ago</span></p>
+                    <p class="location">Ikeja, Lagos</p>
+                </div>
+                <div class="divided-line"></div>
+                <div class="job_details">
+                    <h1>NFT website design</h1>
+                    <p>We are looking to employ group of competent junior designers to build our latest NFT wesite and
+                        we
+                        are also looking to apply young talent for internship vacancy. Send your resume and portfolio to
+                        us
+                        throung our mail on our profile.</p>
+                </div>
+                <div class="job_details_more">
+                    <div class="job_req">
+                        <h1>Budget : $500</h1>
+                        <h1>Remote</h1>
+                        <h1>Entry levels & beginners</h1>
+                    </div>
+                    <button><a href="mailto:name@mail.com">Apply Now</a></button>
+                </div>
+            </div>
+
+        </section>
     </section>
     <footer>
         <div class="footer_cover">
@@ -90,40 +176,45 @@
                         financial ordeal and provide a sustainable career for them.</p>
                     <div class="goals_contact">
                         <p>Follow Us :</p>
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 6C13.1935 6 14.3381 6.47411 15.182 7.31802C16.0259 8.16193 16.5 9.30653 16.5 10.5V15.75H13.5V10.5C13.5 10.1022 13.342 9.72064 13.0607 9.43934C12.7794 9.15804 12.3978 9 12 9C11.6022 9 11.2206 9.15804 10.9393 9.43934C10.658 9.72064 10.5 10.1022 10.5 10.5V15.75H7.5V10.5C7.5 9.30653 7.97411 8.16193 8.81802 7.31802C9.66193 6.47411 10.8065 6 12 6V6Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M4.5 6.75H1.5V15.75H4.5V6.75Z" stroke="#1E1E1E" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M3 4.5C3.82843 4.5 4.5 3.82843 4.5 3C4.5 2.17157 3.82843 1.5 3 1.5C2.17157 1.5 1.5 2.17157 1.5 3C1.5 3.82843 2.17157 4.5 3 4.5Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="imgs">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 6C13.1935 6 14.3381 6.47411 15.182 7.31802C16.0259 8.16193 16.5 9.30653 16.5 10.5V15.75H13.5V10.5C13.5 10.1022 13.342 9.72064 13.0607 9.43934C12.7794 9.15804 12.3978 9 12 9C11.6022 9 11.2206 9.15804 10.9393 9.43934C10.658 9.72064 10.5 10.1022 10.5 10.5V15.75H7.5V10.5C7.5 9.30653 7.97411 8.16193 8.81802 7.31802C9.66193 6.47411 10.8065 6 12 6V6Z"
+                                    stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.5 6.75H1.5V15.75H4.5V6.75Z" stroke="#1E1E1E" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M3 4.5C3.82843 4.5 4.5 3.82843 4.5 3C4.5 2.17157 3.82843 1.5 3 1.5C2.17157 1.5 1.5 2.17157 1.5 3C1.5 3.82843 2.17157 4.5 3 4.5Z"
+                                    stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
-                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.5 1.5H7.25C6.25544 1.5 5.30161 1.89509 4.59835 2.59835C3.89509 3.30161 3.5 4.25544 3.5 5.25V7.5H1.25V10.5H3.5V16.5H6.5V10.5H8.75L9.5 7.5H6.5V5.25C6.5 5.05109 6.57902 4.86032 6.71967 4.71967C6.86032 4.57902 7.05109 4.5 7.25 4.5H9.5V1.5Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.5 1.5H7.25C6.25544 1.5 5.30161 1.89509 4.59835 2.59835C3.89509 3.30161 3.5 4.25544 3.5 5.25V7.5H1.25V10.5H3.5V16.5H6.5V10.5H8.75L9.5 7.5H6.5V5.25C6.5 5.05109 6.57902 4.86032 6.71967 4.71967C6.86032 4.57902 7.05109 4.5 7.25 4.5H9.5V1.5Z"
+                                    stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.25 1.24997C16.5318 1.75658 15.7366 2.14406 14.895 2.39747C14.4433 1.87811 13.843 1.50999 13.1753 1.34292C12.5076 1.17584 11.8046 1.21787 11.1616 1.46331C10.5185 1.70876 9.96633 2.14577 9.57974 2.71526C9.19314 3.28475 8.99077 3.95923 9 4.64747V5.39747C7.68198 5.43165 6.37596 5.13933 5.19826 4.54656C4.02056 3.95378 3.00774 3.07895 2.25 1.99997C2.25 1.99997 -0.75 8.74997 6 11.75C4.4554 12.7984 2.61537 13.3242 0.75 13.25C7.5 17 15.75 13.25 15.75 4.62497C15.7493 4.41606 15.7292 4.20767 15.69 4.00247C16.4555 3.24759 16.9956 2.29451 17.25 1.24997V1.24997Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.25 1.24997C16.5318 1.75658 15.7366 2.14406 14.895 2.39747C14.4433 1.87811 13.843 1.50999 13.1753 1.34292C12.5076 1.17584 11.8046 1.21787 11.1616 1.46331C10.5185 1.70876 9.96633 2.14577 9.57974 2.71526C9.19314 3.28475 8.99077 3.95923 9 4.64747V5.39747C7.68198 5.43165 6.37596 5.13933 5.19826 4.54656C4.02056 3.95378 3.00774 3.07895 2.25 1.99997C2.25 1.99997 -0.75 8.74997 6 11.75C4.4554 12.7984 2.61537 13.3242 0.75 13.25C7.5 17 15.75 13.25 15.75 4.62497C15.7493 4.41606 15.7292 4.20767 15.69 4.00247C16.4555 3.24759 16.9956 2.29451 17.25 1.24997V1.24997Z"
+                                    stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.75 1.5H5.25C3.17893 1.5 1.5 3.17893 1.5 5.25V12.75C1.5 14.8211 3.17893 16.5 5.25 16.5H12.75C14.8211 16.5 16.5 14.8211 16.5 12.75V5.25C16.5 3.17893 14.8211 1.5 12.75 1.5Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M11.9998 8.52748C12.0923 9.15167 11.9857 9.78914 11.6951 10.3492C11.4045 10.9093 10.9446 11.3635 10.381 11.6472C9.81736 11.9309 9.17862 12.0297 8.55562 11.9294C7.93262 11.8292 7.3571 11.535 6.91091 11.0889C6.46472 10.6427 6.17058 10.0671 6.07033 9.44414C5.97008 8.82115 6.06883 8.1824 6.35253 7.61876C6.63622 7.05512 7.09042 6.59529 7.65052 6.30466C8.21062 6.01404 8.8481 5.90742 9.47228 5.99998C10.109 6.0944 10.6984 6.39108 11.1536 6.84621C11.6087 7.30134 11.9054 7.89079 11.9998 8.52748Z"
-                                stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M13.125 4.875H13.1325" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.75 1.5H5.25C3.17893 1.5 1.5 3.17893 1.5 5.25V12.75C1.5 14.8211 3.17893 16.5 5.25 16.5H12.75C14.8211 16.5 16.5 14.8211 16.5 12.75V5.25C16.5 3.17893 14.8211 1.5 12.75 1.5Z"
+                                    stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M11.9998 8.52748C12.0923 9.15167 11.9857 9.78914 11.6951 10.3492C11.4045 10.9093 10.9446 11.3635 10.381 11.6472C9.81736 11.9309 9.17862 12.0297 8.55562 11.9294C7.93262 11.8292 7.3571 11.535 6.91091 11.0889C6.46472 10.6427 6.17058 10.0671 6.07033 9.44414C5.97008 8.82115 6.06883 8.1824 6.35253 7.61876C6.63622 7.05512 7.09042 6.59529 7.65052 6.30466C8.21062 6.01404 8.8481 5.90742 9.47228 5.99998C10.109 6.0944 10.6984 6.39108 11.1536 6.84621C11.6087 7.30134 11.9054 7.89079 11.9998 8.52748Z"
+                                    stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.125 4.875H13.1325" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="quick_links">
@@ -133,8 +224,8 @@
                     <p>About Us</p>
                 </div>
                 <div class="quick_links">
-                    <p>Company</p>
-                    <ul>
+                    <p class="comp">Company <span class="add">&#9660;</span></p>
+                    <ul class="links_quick">
                         <li><a>Privacy Policy</a></li>
                         <li><a>Terms & Service</a></li>
                         <li><a>About Us</a></li>
@@ -156,8 +247,8 @@
 
         </div>
     </footer>
-    <script src="../static/app.js"></script>
-    <script src="{% static 'app.js' %}"></script>
+    <script src="../static/home.js"></script>
+    <script src="{% static 'home.js' %}"></script>
 </body>
 
 </html>
