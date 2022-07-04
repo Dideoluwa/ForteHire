@@ -1,5 +1,5 @@
-// let ul = document.getElementsByClassName("main_body");
-// let li = ul.querySelectorAll('.main_body.main_body_jobs')
+    // let ul = document.getElementsByClassName("main_body");
+    // let li = ul.querySelectorAll('.main_body.main_body_jobs')
 
 let input = document.getElementsByClassName('nav_input');
 const listArray = Array.from(li);

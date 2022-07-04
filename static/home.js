@@ -7,6 +7,11 @@ let openMobile = document.querySelector('.profile_mobile')
 let profile = document.querySelector('.profile_mob')
 let closeMobile = document.querySelector('.closeMobile')
 
+// let ul = document.getElementsByClassName("main_body_jobs");
+// let li = ul.querySelectorAll('.main_body_jobs p')
+// const listArray = Array.from(li);
+
+
 openMenu.addEventListener('click', () => {
     menu.style.width = '50vw'
   })
@@ -25,3 +30,15 @@ openMenu.addEventListener('click', () => {
     openMobile.style.width = '0%'
   })
   
+
+  // const filterUsers = (event) => {
+  //   ul.innerHTML = ""
+  //   let keyword = input.value.toLowerCase();
+  //   listArray.forEach((item) => {
+  //     if (item.textContent.toLowerCase().includes(keyword)) {
+  //       ul.appendChild(item)
+  //     }
+  //   })
+  // }
+  
+  // input.addEventListener('keyup', filterUsers);
