@@ -432,7 +432,7 @@ footer {
         background-color: white;
         justify-content: center;
         transition: 0.2s;
-        overflow-x: hidden;
+        overflow-y: scroll;
         z-index: 1000;
     }
 
@@ -543,13 +543,13 @@ footer {
         background-repeat: no-repeat;
         width: 100px;
         height: 100px;
-        margin-bottom: 12px;
     }
     
     .profile_mobile_img img {
         border-radius: 50%;
         width: 100px;
         height: 100px;
+        margin-bottom: 150px;
         /* height: 100%; */
     }
     
@@ -557,7 +557,7 @@ footer {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 52px;
     }
     
     .profile_mobile_talent {
@@ -612,6 +612,14 @@ footer {
 }
 
 @media screen and (max-width: 540px) {
+    .divided-line {
+        height: 0.5px;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #1E1E1E;
+        color: #1E1E1E;
+    }
     .main_body_title{
         padding: 15px;
         margin-left: 5px;
@@ -692,7 +700,7 @@ footer {
         background-repeat: no-repeat;
         width: 100px;
         height: 100px;
-        margin-bottom: 12px;
+        /* margin-bottom: 52px; */
     }
     
     .profile_mobile_img img {
@@ -706,7 +714,7 @@ footer {
         font-size: 16px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 12px;
+        margin-bottom: 52px;
     }
     
     .profile_mobile_talent {

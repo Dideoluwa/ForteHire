@@ -261,6 +261,10 @@ nav {
     margin: 28px 40px;
 }
 
+textarea {
+    border-radius: 8px;
+}
+
 .main_body_jobs_head p {
     font-size: 18px;
     font-weight: 400;
@@ -497,7 +501,7 @@ footer {
         background-color: white;
         justify-content: center;
         transition: 0.2s;
-        overflow-x: hidden;
+        overflow-y: scroll;
         z-index: 1000;
     }
 
@@ -683,6 +687,15 @@ footer {
 }
 
 @media screen and (max-width: 540px) {
+    .divided-line {
+        height: 0.5px;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #1E1E1E;
+        color: #1E1E1E;
+    }
+
     .main_form_inputs label {
         margin: 6px 0px;
         color: #1E1E1E;
@@ -801,7 +814,7 @@ footer {
         background-repeat: no-repeat;
         width: 100px;
         height: 100px;
-        margin-bottom: 12px;
+        /* margin-bottom: 52px; */
     }
 
     .profile_mobile_img img {
@@ -815,7 +828,7 @@ footer {
         font-size: 16px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 52px;
     }
 
     .profile_mobile_talent {
