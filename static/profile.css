@@ -94,7 +94,8 @@ body {
     padding: 20px;
     margin-bottom: 7px;
 }
-#post-txt:focus{
+
+#post-txt:focus {
     outline: none;
     border: 0.5px solid #8325B0;
 }
@@ -115,11 +116,13 @@ body {
     border: 0.5px solid #1E1E1E;
     border-radius: 8px;
 }
-.main_form_inputs input:focus{
+
+.main_form_inputs input:focus {
     outline: none;
     border: 0.5px solid #8325B0;
 }
-.main_form button{
+
+.main_form button {
     transition: all 0.2s ease-in-out;
     padding: 15px 20px;
     border-radius: 8px;
@@ -132,35 +135,53 @@ body {
     margin-top: 50px;
     margin-bottom: 70px;
 }
-@media screen and (max-width: 540px){
-    .design{
+
+.logo_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+    .design {
         display: none;
     }
-    .form_inputs{
+
+    .form_inputs {
         background-color: #EDE5F0;
         width: 100%;
         max-width: 100%;
     }
+
     .form_inputs_head {
         font-size: 20px;
-        margin-top: 80px;
+        margin-top: 130px;
     }
-    
+
     .form_inputs_head_info {
         font-size: 15px;
         margin-top: 15px;
     }
+
     .main_form_inputs label {
         color: #1E1E1E;
         font-size: 15px;
     }
-    
+
     .main_form_inputs input {
         padding: 10px 15px;
         border: 0.5px solid #1E1E1E;
         border-radius: 8px;
     }
-    .main_form button{
+
+    .main_form button {
         width: 100%;
+    }
+    .logo_mobile {
+        display: block;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .logo_mobile svg {
+        width: 50px;
     }
 }
